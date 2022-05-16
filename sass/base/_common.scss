@@ -7,13 +7,17 @@ html {
 *::before {
   box-sizing: inherit;
 }
+h1,h2,h3,h4,h5,h6,p{
+  margin:0;
+}
 
 body {
   // Базовые настройки
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
   color: var(--main-text-color);
 }
 
@@ -34,8 +38,7 @@ img {
 
 button {
   cursor: pointer;
-  background-color: var(--gray-bgc);
-  color: var(--black-text-color);
+  
 }
 
 .link {
@@ -45,7 +48,8 @@ button {
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    text-decoration: underline;
+    color: var(--hover-text-color);
   }
 }
 
